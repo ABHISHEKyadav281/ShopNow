@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single product details</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+        
+
+        <title>red store | ecommerce website</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html"> <img src="logo.png" width="125px"> </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Product</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="account.html"> Account</a>
+                        </li>
+
+                    </ul>
+                </nav>
+               <a href="shoping.html"><img src="cart.png" alt="" width="30px" height="30px"></a> 
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+        <!-- =====================cart details================== -->
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>product</th>
+                    <th>Quantity</th>
+                    <th>subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="buy-1.jpg" alt="">
+                            <div>
+                                <p>Red printed t-shirt</p>
+                                <small>$50.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                      <td><input type="number" value="1"></td>
+                      <td>$50.00</td>
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        <div class="cart-info">
+                            <img src="buy-2.jpg" alt="">
+                            <div>
+                                <p>Red printed t-shirt</p>
+                                <small>$60.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    <td><input type="number" value="1"></td>
+                    <td>$60.00</td>
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td>
+                        <div class="cart-info">
+                            <img src="buy-3.jpg" alt="">
+                            <div>
+                                <p>Red printed t-shirt</p>
+                                <small>$46.00</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    <td><input type="number" value="1"></td>
+                    <td>$46.00</td>
+                    </td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+
+                    <tr>
+                        <td>subtotal</td>
+                        <td>$156.00</td>
+                    </tr>
+                    <tr>
+                        <td>tax</td>
+                        <td>$14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$170.00</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- ==========footer===================================== -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h1>Download out App</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                        <div class="app-logo">
+                            <img src="play-store.png" alt="">
+                            <img src="app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="logo-white.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>usefull links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li> <a href="#">Facebook</a> </li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===============script======================= -->
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+
+
+            // <!-- ------------- product-detail ----------------- -->
+            var productImg = document.getElementById("productImg")
+            var SmallImg = document.getElementById("smallImg")
+
+            smallImg[0].onclick = function () {
+                productImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function () {
+                productImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function () {
+                productImg.src = smallImg[2].src;
+            }
+            smallImg[03].onclick = function () {
+                productImg.src = smallImg[03].src;
+            }
+
+        </script>
+    </body>
+
+    </html>
+
+
+
+
+</body>
+
+</html>
