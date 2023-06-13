@@ -5,29 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>single product details</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <title>ShopNow</title>
 </head>
 
+
 <body>
-
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
-        
-
-        <title>red store | ecommerce website</title>
-    </head>
-
-    <body>
 
         <div class="container">
 
@@ -47,7 +34,7 @@
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="https://www.linkedin.com/in/abhishek-yadav-aab95b202/">Contact</a>
                         </li>
                         <li>
                             <a href="account.html"> Account</a>
@@ -55,7 +42,7 @@
 
                     </ul>
                 </nav>
-               <a href="shoping.html"><img src="cart.png" alt="" width="30px" height="30px"></a> 
+               <a href="shoping.html" style=" filter: drop-shadow(0px 6px 15px springgreen)"><img src="cart.png" alt="" width="30px" height="30px"></a> 
                 <img src="menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
 
@@ -183,47 +170,7 @@
             </div>
         </div>
 
-        <!-- ===============script======================= -->
-
-        <script>
-            var MenuItems = document.getElementById("MenuItems");
-            MenuItems.style.maxHeight = "0px";
-
-            function menutoggle() {
-                if (MenuItems.style.maxHeight == "0px") {
-                    MenuItems.style.maxHeight = "200px";
-                }
-                else {
-                    MenuItems.style.maxHeight = "0px";
-                }
-            }
-
-
-            // <!-- ------------- product-detail ----------------- -->
-            var productImg = document.getElementById("productImg")
-            var SmallImg = document.getElementById("smallImg")
-
-            smallImg[0].onclick = function () {
-                productImg.src = smallImg[0].src;
-            }
-            smallImg[1].onclick = function () {
-                productImg.src = smallImg[1].src;
-            }
-            smallImg[2].onclick = function () {
-                productImg.src = smallImg[2].src;
-            }
-            smallImg[03].onclick = function () {
-                productImg.src = smallImg[03].src;
-            }
-
-        </script>
-    </body>
-
-    </html>
-
-
-
-
+        <script src="script.js"></script>
 </body>
 
 </html>
